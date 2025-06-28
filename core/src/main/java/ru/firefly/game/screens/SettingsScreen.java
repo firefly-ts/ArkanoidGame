@@ -21,7 +21,7 @@ public class SettingsScreen extends ScreenAdapter {
 
     MyGdxGame myGdxGame;
 
-    MovingBackgroundView backgroundView;
+    BackgroundView backgroundView;
     TextView titleTextView;
     ImageView blackoutImageView;
     ButtonView returnButton;
@@ -32,7 +32,7 @@ public class SettingsScreen extends ScreenAdapter {
     public SettingsScreen(MyGdxGame myGdxGame) {
         this.myGdxGame = myGdxGame;
 
-        backgroundView = new MovingBackgroundView(GameResources.BACKGROUND_IMG_PATH);
+        backgroundView = new BackgroundView(GameResources.BACKGROUND_IMG_PATH);
 
         float hWin = GameSettings.SCREEN_HEIGHT;
 

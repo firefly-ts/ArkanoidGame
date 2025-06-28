@@ -16,7 +16,7 @@ public class MenuScreen extends ScreenAdapter {
 
     MyGdxGame myGdxGame;
 
-    MovingBackgroundView backgroundView;
+    BackgroundView backgroundView;
     TextView titleView;
     ButtonView startButtonView;
     ButtonView settingsButtonView;
@@ -25,7 +25,7 @@ public class MenuScreen extends ScreenAdapter {
     public MenuScreen(MyGdxGame myGdxGame) {
         this.myGdxGame = myGdxGame;
 
-        backgroundView = new MovingBackgroundView(GameResources.BACKGROUND_IMG_PATH);
+        backgroundView = new BackgroundView(GameResources.BACKGROUND_IMG_PATH);
 
         float hWin = GameSettings.SCREEN_HEIGHT;
         float wWin = GameSettings.SCREEN_WIDTH - 2 * 500;
